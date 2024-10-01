@@ -1,6 +1,6 @@
-import pandas as pd
-import numpy as np
-import streamlit as st
+import pandas as pd # type: ignore
+import numpy as np # type: ignore
+import streamlit as st # type: ignore
 
 st.title("This is a BMI Calc")
 st.write("Calc stands for calculator for anyone wondering")
