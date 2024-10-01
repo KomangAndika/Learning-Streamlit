@@ -23,12 +23,12 @@ if st.button("Calc BMI"):
     elif res < 18.5 and happy > 5:
         st.write("you are skinny and happy")
 
-    elif (res < 18.5 and res > 24.9) and happy > 5:
-        st.write("you are ok and sad as fuck")
     elif (res < 18.5 and res > 24.9) and happy < 5:
+        st.write("you are ok and sad as fuck")
+    elif (res < 18.5 and res > 24.9) and happy > 5:
         st.write("you are ok and happy")
 
     elif res > 24.9 and happy > 5:
         st.write("you are fat and sad as fuck")
     elif res > 24.9 and happy < 5:
-        st.write("you are fat happy")
+        st.write("you are sad fat fuck")
