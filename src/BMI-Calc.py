@@ -15,3 +15,20 @@ def calculate_bmi(weight, height):
         return bmi
     return 0
 
+if st.button("Calc BMI"):
+    res = calculate_bmi(weight,height)
+    st.write(f"Your BMI is: {res:.2f}")
+    if res < 18.5 and happy < 5:
+        st.write("you are skinny and sad as fuck")
+    elif res < 18.5 and happy > 5:
+        st.write("you are skinny and happy")
+
+    elif (res < 18.5 and res > 24.9) and happy > 5:
+        st.write("you are ok and sad as fuck")
+    elif (res < 18.5 and res > 24.9) and happy < 5:
+        st.write("you are ok and happy")
+
+    elif res > 24.9 and happy > 5:
+        st.write("you are fat and sad as fuck")
+    elif res > 24.9 and happy < 5:
+        st.write("you are fat happy")
